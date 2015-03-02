@@ -1,4 +1,4 @@
-# jel
+# Farmlink
 
 
 ## Clientside Development
@@ -23,8 +23,8 @@ open public/index.html # in another terminal window
 #### rebuilding for nginx
 
 ``` shell
-ssh mafia@jel.me
-cd /home/mafia/code/go/src/github.com/alexpaley/jel
+ssh mafia@farmlink.me
+cd /home/mafia/code/go/src/github.com/alexpaley/farmlink
 git pull origin master
 cd client
 gulp # rebuilds files and puts them in the public folder
