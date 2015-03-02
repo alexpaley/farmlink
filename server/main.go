@@ -13,7 +13,7 @@ import (
 
 const (
 	MAILCHIMP_API_KEY = "23cc6196ad7a14d6574a0097eb3560a5-us5"
-	MAILCHIMP_LIST_ID = "d92ff99d1a"
+	MAILCHIMP_LIST_ID = "e17821b3b5"
 )
 
 var (
