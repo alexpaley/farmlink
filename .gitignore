@@ -1,0 +1,8 @@
+node_modules
+*.html
+public/static/css/*.css
+*.log
+public/static/partials/**/*.html
+public/static/js
+.DS_Store
+.tern-port

@@ -1,0 +1,111 @@
+//Common Baseline Styles
+html, body
+    box-sizing: border-box
+
+*, *:before, *:after
+    box-sizing: inherit
+
+body
+    width 100%
+    background-color white
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+
+header, footer
+    position fixed
+    z-index 99999
+    span(1)
+    height 80px
+    background-color indigo-darker
+    +mobile(414px)
+        height 56px
+    .logo
+        height 100%
+        margin-left: 15px
+        font-size: 30px
+        color: white
+        &:before
+            content ''
+            display inline-block
+            vertical-align middle
+            height 100%
+
+header
+    top 0
+    left 0
+
+footer
+    bottom 0
+    left 0
+
+input
+    line-height: 40px
+    padding: 0 0 0 15px
+    background-color: grey-lightest
+    -webkit-appearance: none
+    box-shadow: none !important
+    outline: 0
+    border: none
+    border-radius: 3px
+    color: grey-darker
+    &:focus
+        outline: 0
+::-webkit-input-placeholder
+   color: grey
+:-moz-placeholder
+   color: grey
+::-moz-placeholder
+   color: grey
+:-ms-input-placeholder
+   color: grey
+
+a
+    text-decoration none
+
+ul
+    list-style-type none
+.btn
+    padding: 10px 10px
+    display: inline-block
+    font-size: 1.5em
+    vertical-align: middle
+.btn-action
+    padding: 18px
+    width: 20%
+    background-color: pink
+    color: white
+    text-align: center
+    border-radius: 3px
+    transition: color .5s linear, background-color .5s ease-in-out
+    &:hover
+        background-color: pink-darker
+        transition: color .5s linear, background-color .5s ease-in-out
+
+.section-title
+    text-align center
+    color grey-darker
+    font-weight 300
+    +mobile()
+        font-size 20px
+
+//Easy access colors
+.pink
+    color pink
+.indigo
+    color indigo
+.pink-darker
+    color pink-darker
+.pink-background
+    background-color pink
+.indigo-background
+    background-color indigo !important
+.lime-background
+    background-color lime-green !important
+
+//Easy FLoats
+.left
+    float left
+.right
+    float right
+.center
+    text-align center
