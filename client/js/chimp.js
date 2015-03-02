@@ -3,8 +3,8 @@ $(document).ready( function () {
     $('#signupButton').bind('click', function (event) {
         event.preventDefault();
         console.log($form.serialize());
-        if($('#signupButton').hasClass('lime-background')) {
-            $('#signupButton').removeClass('lime-background');
+        if($('#signupButton').hasClass('red-background')) {
+            $('#signupButton').removeClass('red-background');
         }
 
         $.ajax({
@@ -20,10 +20,10 @@ $(document).ready( function () {
             success : function(data) {
                 if (data.Code != "0") {
                     $('#signupButton').text('Try Again');
-                    $('.btn-action').addClass('lime-background');
+                    $('.btn-action').addClass('red-background');
                 } else {
                     $('#signupButton').text('Requested');
-                    $('.btn-action').addClass('indigo-background');
+                    $('.btn-action').addClass('green-background');
                    }
             }
         });

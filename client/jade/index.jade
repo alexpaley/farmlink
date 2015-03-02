@@ -14,19 +14,22 @@ html
         script(type="text/javascript", src="./static/js/lib/zepto.fx.js")
     body
         header
-            .logo jel
+            .logo farmlink
         section.hero-content
             p.tagline
-                | Advertise your product on other retailers'
-                strong.pink &nbsp;packaging.
+                | A smarter, data-driven way to
+                strong.white &nbsp;track&nbsp;
+                | and
+                strong.white &nbsp;manage&nbsp;
+                | your crops
         section.icons-container
             a(name="email-signup")
             .icon-desc-wrap.left
                 .icon-tape
-                p.icon-title Custom Packing Tape
+                p.icon-title Connected Field Hardware
             .icon-desc-wrap.right
                 .icon-flyers
-                p.icon-title In-Package Flyers
+                p.icon-title Insights Dashboard
         section.email-container
                 form.email-form(name="emailForm", id="emailForm", action="/api/chimp" method="post")
                     input.email(type="email", placeholder="email", pattern="/^[A-z0-9._%+-]+@[A-z0-9.-]+[.][A-z]{2,4}$/", name="email", id="email")
@@ -34,8 +37,8 @@ html
                     a.btn.btn-action.register(href="javascript:void(0)", id="signupButton") Request Info
         .section-wrapper-advertiser
             h2.section-title
-                | Why should you Jel if you're an
-                strong.indigo &nbsp;Advertiser?
+                | Why use Farmlink on
+                strong.green &nbsp;your farm?
             section.why-jel-advertiser
                 ul
                     li
@@ -43,91 +46,36 @@ html
                             .number-bubble
                                 .number 1
                         .text-container
-                            .list-text Reach people who are guaranteed to have spent online.
+                            .list-text Track soil moisture, pH, and temperature levels of each field.
                     li
                         .bubble-container
                             .number-bubble
                                 .number 2
                         .text-container
-                            .list-text Target customers by their purchase history, spend size, and location.
+                            .list-text See an accurate, real-time model of your crops’ growth lifecycle.
                     li
                         .bubble-container
                             .number-bubble
                                 .number 3
                         .text-container
-                            .list-text Partner with specific retailers from niche commerce sites to cross-vertical megastores.
+                            .list-text Manage water and fertilizer use more efficiently.
                     li
                         .bubble-container
                             .number-bubble
                                 .number 4
                         .text-container
-                            .list-text Spend as little as $0.45 per package to promote your product.
+                            .list-text Anticipate problems before they hurt your crop.
                     li
                         .bubble-container
                             .number-bubble
                                 .number 5
                         .text-container
-                            .list-text E-commerce sales will grow by 30% in 2015. Don't miss this wave.
-        .section-wrapper-retailer
-            h2.section-title
-                | Why should you Jel if you're a
-                strong.pink &nbsp;Retailer?
-            section.why-jel-retailer
-                ul
-                    li
-                        .bubble-container
-                            .number-bubble
-                                .number 1
-                        .text-container
-                            .list-text Earn extra revenue with zero extra effort.
-                    li
-                        .bubble-container
-                            .number-bubble
-                                .number 2
-                        .text-container
-                            .list-text Cut packing tape costs (we supply free tape).
-                    li
-                        .bubble-container
-                            .number-bubble
-                                .number 3
-                        .text-container
-                            .list-text We integrate with your existing shipping process.
-                    li
-                        .bubble-container
-                            .number-bubble
-                                .number 4
-                        .text-container
-                            .list-text Advertisers come to you. No need to solicit or onboard partners yourself.
-                    li
-                        .bubble-container
-                            .number-bubble
-                                .number 5
-                        .text-container
-                            .list-text Get started in under 24 hours.
-        //.section-wrapper-logos
-            h2.section-title Here are some retailers that you can advertise with
-            section.logo-container
-                .center-wrapper
-                    .boconcept-logo
-                    .brioni-logo
-                    .loccitane-logo
-                    .sunglasshut-logo
+                            .list-text Receive intelligent alerts on your phone and computer.
         section.contact
             .contact-text
                 h2
-                    | This is cheaper than Google Ads or Direct Mail.
-                    br
-                    | Don't believe us?
+                    | Want to hear more about Farmlink?
                     a(href="#email-signup")
-                        strong.pink.get-in-touch &nbsp; Get in touch.
-
-        script.
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-59762161-1', 'auto');
-            ga('send', 'pageview');
+                        strong.white.get-in-touch &nbsp;Get in touch.
         script(type="text/javascript", src="./static/js/chimp.js")
         script(type="text/javascript", src="./static/js/app.js")
