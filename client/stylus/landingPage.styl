@@ -8,24 +8,35 @@
         margin-top 56px
         height 137px //magic number to make it in center of circle
 .hero-content
-    height 300px
-    padding 15px
-    margin 80px auto 0 auto
-    background-color green
-    text-align center
+    height 520px
+    padding 80px
+    margin 0 auto
+    background-image url("../img/grass-hero-content.png")
+    background-repeat no-repeat
+    background-position center
+    background-size cover
     //width 1024px
     +mobile()
-        height 150px
-        margin 56px auto 0 auto
+        height 250px
         width 100%
+        padding 56px
     .tagline
-        color green-lighter
+        padding 15px
+        max-width 420px
+        margin-top 50px
+        color blue
         font-size 30px
         font-weight 300
+        background-color white
+        opacity 0.9
+        border-radius 2px
         +mobile()
-            margin-top 10px
-            font-size 18px
+            margin-top 20px
+            font-size 16px
             line-height 20px
+.diagram
+    width 100%
+    height auto
 .icons-container
     width 550px
     height 275px
@@ -69,7 +80,7 @@
 .email-container
     width 60%
     max-width 550px
-    margin 30px auto 50px auto
+    margin 20px auto 50px auto
     .email-form
         position relative
         display inline-block
@@ -83,6 +94,7 @@
             transition color .5s linear, background-color .5s ease-in-out
     +mobile()
         width 90%
+        margin 0 auto 50px auto
     .email
         display inline-block
         width 60% // Needed to show "Request Info"

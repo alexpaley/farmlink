@@ -14,15 +14,11 @@ html
         script(type="text/javascript", src="./static/js/lib/zepto.fx.js")
     body
         header
-            .logo farmlink
+            .logo FarmLink
         section.hero-content
             p.tagline
-                | A smarter, data-driven way to
-                strong.white &nbsp;track&nbsp;
-                | and
-                strong.white &nbsp;manage&nbsp;
-                | your crops
-        section.icons-container
+                | A smarter, data-driven way to track and manage your crops
+        //section.icons-container
             a(name="email-signup")
             .icon-desc-wrap.left
                 .icon-tape
@@ -35,6 +31,8 @@ html
                     input.email(type="email", placeholder="email", pattern="/^[A-z0-9._%+-]+@[A-z0-9.-]+[.][A-z]{2,4}$/", name="email", id="email")
                     i.fa.fa-envelope.mail-icon
                     a.btn.btn-action.register(href="javascript:void(0)", id="signupButton") Request Info
+        img.diagram(src="./static/img/sensor-diagram.jpg")
+        img.diagram(src="./static/img/space-sensor.jpg")
         .section-wrapper-advertiser
             h2.section-title
                 | Why use Farmlink on
