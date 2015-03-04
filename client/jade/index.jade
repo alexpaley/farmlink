@@ -31,8 +31,10 @@ html
                     input.email(type="email", placeholder="email", pattern="/^[A-z0-9._%+-]+@[A-z0-9.-]+[.][A-z]{2,4}$/", name="email", id="email")
                     i.fa.fa-envelope.mail-icon
                     a.btn.btn-action.register(href="javascript:void(0)", id="signupButton") Request Info
-        img.diagram(src="./static/img/sensor-diagram.jpg")
-        img.diagram(src="./static/img/space-sensor.jpg")
+        section.diagram-section
+            img.diagram(src="./static/img/sensor-diagram.jpg")
+        section.diagram-section.grey-background
+            img.diagram(src="./static/img/space-sensor.jpg")
         .section-wrapper-advertiser
             h2.section-title
                 | Why use Farmlink on
